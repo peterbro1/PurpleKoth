@@ -1,0 +1,8 @@
+name: PurpleKoth
+main: me.gmx.purplekoth.PurpleKoth
+version: ${project.version}
+depend: [WorldGuard,GangsPlus]
+author: GMX
+commands:
+  purplekoth:
+    aliases: [pkoth,koth]
