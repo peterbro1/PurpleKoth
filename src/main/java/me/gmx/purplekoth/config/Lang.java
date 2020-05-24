@@ -9,9 +9,9 @@ import java.util.List;
 
 public enum Lang {
 
-    PREFIX("&6[&5Purple KOTH&6]&r "),
+    PREFIX("&6&lKOTH> &r "),
     MSG_ERROR("Error occured, please contact server developer."),
-    MSG_PKOTH_USAGE("&4Incorrect usage! See /pkoth help."),
+    MSG_PKOTH_USAGE("&4Incorrect usage! See /koth help."),
     MSG_USAGE_SUBCOMMAND("Incorrect usage. Correct usage is %usage%"),
     MSG_PKOTH_HELP("&2Insert generic help here."),
     ARENA_REMOVED("&aArena successfully removed"),

@@ -65,6 +65,8 @@ public class KothManager {
             try {
                 i = Long.parseLong(Settings.PREV_COUNTDOWN.getString());
                 int l = (int) (i - System.currentTimeMillis())/1000;
+                if (l <= 0)
+                    return false;
                 System.out.println("Successfully reloaded previous countdown. I: " + i + "//L: " + l);
                 startCountdown(l);
                 return true;
@@ -87,8 +89,11 @@ public class KothManager {
             return;
         }
         //task = new RandomKoth(ins, ChatUtils.getSecondsFromString(Settings.TIME_BETWEEN_KOTH.getString()));
-        reloadPrevCountdown();
-        //System.out.println("Detected previous countdown, resuming!");
+        if (reloadPrevCountdown()){
+            System.out.println("Detected previous countdown, resuming!");
+
+        }else startCountdown(false);
+
     }
 
     public void saveCountdown(){
