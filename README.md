@@ -1,3 +1,3 @@
 # PurpleKoth
 
-#### I abandoned this project 2 years ago and do not intend to update it. I release all rights to the code-- have fun!
+#### There is no documentation or support as this was a privately contracted project never meant to be shared publicly. This is now abandoned, and I do not plan to maintain it.
